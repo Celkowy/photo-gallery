@@ -1,5 +1,5 @@
 lightbox.option({
-  'albumLabel': "Zdjęcie %1 z %2",
+  'albumLabel': "%1 / %2",
   'disableScrolling': true,
   'faceDuration': 500,
   'resizeDuration': 500,
@@ -15,20 +15,18 @@ const nav = document.querySelector('nav');
 const hamburger = document.querySelector('.hamburger');
 const topSlideMenu = document.querySelector('.top-slide-menu');
 const exitI = document.querySelector('.exit i');
-const navLi1 = document.querySelector('.move1')
-const navLi2 = document.querySelector('.move2')
-const navLi3 = document.querySelector('.move3')
-const rotate1 = document.querySelector('.rotate1');
-const rotate2 = document.querySelector('.rotate2');
-const rotate3 = document.querySelector('.rotate3');
 
-let navSwitcher = [navLi1, navLi2, navLi3];
+let navSwitcher = [document.querySelector('.move1'), document.querySelector('.move2'), document.querySelector('.move3')];
+
+let arrowRotation = [document.querySelector('.rotate1'), document.querySelector('.rotate2'), document.querySelector('.rotate3')]
+
 
 for(let i = 0; i < navSwitcher.length; i++){
   navSwitcher[i].addEventListener('click', function(){
-    rotate1.classList.toggle('rotate')
-    rotate2.classList.toggle('rotate')
-    rotate3.classList.toggle('rotate')
+    
+    for(let i = 0; i < arrowRotation.length; i++){
+    arrowRotation[i].classList.toggle('rotate');
+    }
   })
 }
 
@@ -36,7 +34,6 @@ hamburger.addEventListener('click', function(){
   topSlideMenu.classList.toggle('active');
   document.body.classList.add('do-not-move')
   exitI.classList.add('show');
-  
 })
 
 exitI.addEventListener('click', function(){
@@ -57,3 +54,19 @@ for(let i = 0; i < topMenuTriggers.length; i++){
       })
 })
 }
+
+window.addEventListener('resize', () => {
+  const mq = window.matchMedia("(max-width: 1280px)")
+  if (mq.matches) {
+    topMenu.classList.remove('active')
+    nav.classList.remove('black');
+
+    switchColor.forEach(function(color){
+      color.classList.remove('black')
+    })
+
+    for(let i = 0; i < arrowRotation.length; i++){
+        arrowRotation[i].classList.toggle('rotate');
+    }
+  }
+})
