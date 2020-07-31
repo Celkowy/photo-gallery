@@ -81,7 +81,7 @@ body.do-not-move {
   display: none;
   position: absolute;
   top: 15px;
-  left: 20px;
+  left: 15px;
   cursor: pointer;
   transition: .5s;
   color: black;
@@ -370,10 +370,6 @@ footer {
 
 @media (orientation: landscape) and (max-height: 480px) {
 
-  .top-slide-menu ul {
-    height: 300px;
-  }
-
   .top-slide-menu li a {
     font-size: 26px;
   }
@@ -420,6 +416,10 @@ footer {
     margin-left: 0;
     margin-top: 5px;
     font-size: 32px;
+  }
+
+  .top-slide-menu ul {
+    height: 400px;
   }
 
   .nav-ul {
@@ -505,6 +505,10 @@ footer {
 
   .top-slide-menu li a {
     font-size: 30px;
+  }
+
+  .top-slide-menu ul {
+    height: 350px;
   }
 
   .nav-icon {

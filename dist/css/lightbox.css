@@ -1,3 +1,17 @@
+#lightboxOverlay {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+#lightbox {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
 body.lb-disable-scrolling {
   overflow-y: hidden;
 }

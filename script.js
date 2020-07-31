@@ -4,6 +4,7 @@ lightbox.option({
   'faceDuration': 500,
   'resizeDuration': 500,
   'wrapAround': true,
+  'positionFromTop': 0,
 })
 
 const builder = document.querySelector('.nav-ul li:nth-of-type(2)');
