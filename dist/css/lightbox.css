@@ -114,16 +114,15 @@ body.lb-disable-scrolling {
   left: 0;
   float: left;
   background: url(../images/prev.png) left 48% no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
-  transition: opacity 0.6s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .lb-nav a.lb-prev:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
@@ -132,16 +131,15 @@ body.lb-disable-scrolling {
   right: 0;
   float: right;
   background: url(../images/next.png) right 48% no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
-  transition: opacity 0.6s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .lb-nav a.lb-next:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
@@ -200,16 +198,31 @@ body.lb-disable-scrolling {
   background: url(../images/close.png) top right no-repeat;
   text-align: right;
   outline: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .lb-data .lb-close:hover {
   cursor: pointer;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+@media (max-width: 1280px) {
+
+  .lb-nav a.lb-prev {
+    opacity: 1;
+  }
+
+  .lb-nav a.lb-next {
+    opacity: 1;
+  }
+
+  .lb-data .lb-close {
+    opacity: 1;
+  }
+
 }

@@ -338,18 +338,19 @@ a:hover {
   border: 5px solid #505760;
 }
 
-
-
 img {
-  /* width: 100%; */
-  /* height: 100%; */
-  /* max-width: 480px; */
-  /* max-height: 320px; */
   padding: 5px;
 }
 
+.filter {
+  filter: blur(1px);
+  transition: .3s;
+}
 
-
+.filter:hover {
+  transform: scale(1.02);
+  filter: blur(0);
+}
 
 footer {
   margin: 50px 50px 0;
@@ -452,6 +453,14 @@ footer {
     font-size: 13px;
     width: 150px;
     height: 38px;
+  }
+
+  .filter {
+    filter: blur(0);
+  }
+
+  .filter:hover {
+    transform: scale(1);
   }
 
 }
