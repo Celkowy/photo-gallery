@@ -35,6 +35,13 @@ hamburger.addEventListener('click', function(){
   topSlideMenu.classList.toggle('active');
   document.body.classList.add('do-not-move')
   exitI.classList.add('show');
+  history.pushState({page: 0}, "")
+})
+
+window.addEventListener('popstate', () => {
+  topSlideMenu.classList.remove('active')
+  document.body.classList.remove('do-not-move')
+  exitI.classList.remove('show');
 })
 
 exitI.addEventListener('click', function(){

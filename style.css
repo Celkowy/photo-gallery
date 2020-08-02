@@ -343,8 +343,8 @@ img {
 }
 
 .filter {
-  filter: blur(1px);
-  transition: .3s;
+  filter: blur(1.5px);
+  transition: .4s;
 }
 
 .filter:hover {
