@@ -111,12 +111,12 @@ body.do-not-move {
 }
 
 .hamburger-span:nth-of-type(2) {
-  left: -10px;
+  left: -6px;
   top: 12px;
 }
 
 .hamburger-span:nth-of-type(3) {
-  left: -20px;
+  left: -12px;
   bottom: 0;
 }
 
@@ -547,6 +547,10 @@ footer {
 
 @media (max-width: 640px) {
 
+  .wrap-info {
+    margin-top: 175px;
+  }
+
   .wrap-info h1 {
     font-size: 32px;
   }
@@ -638,9 +642,13 @@ footer {
   }
 
   .gallery {
+    margin-top: 100px;
     width: 380px;
   }
 
+  .wrap-info {
+    margin-top: 150px;
+  }
 
   .wrap-info h1 {
     font-size: 24px;
