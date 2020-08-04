@@ -37,8 +37,6 @@ hamburger.addEventListener('click', function(){
   exitI.classList.add('show');
 })
 
-
-
 exitI.addEventListener('click', function(){
   topSlideMenu.classList.remove('active');
   document.body.classList.remove('do-not-move')
@@ -69,7 +67,7 @@ window.addEventListener('resize', () => {
     })
 
     for(let i = 0; i < arrowRotation.length; i++){
-        arrowRotation[i].classList.toggle('rotate');
+        arrowRotation[i].classList.remove('rotate');
     }
   }
 })
