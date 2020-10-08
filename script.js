@@ -16,6 +16,7 @@ const nav = document.querySelector('nav');
 const hamburger = document.querySelector('.hamburger');
 const topSlideMenu = document.querySelector('.top-slide-menu');
 const exitI = document.querySelector('.exit i');
+const hide = document.querySelector('.hide')
 
 let navSwitcher = [document.querySelector('.move1'), document.querySelector('.move2'), document.querySelector('.move3')];
 
@@ -23,7 +24,7 @@ let arrowRotation = [document.querySelector('.rotate1'), document.querySelector(
 
 
 for(let i = 0; i < navSwitcher.length; i++){
-  navSwitcher[i].addEventListener('click', function(){
+  navSwitcher[i].addEventListener('click', () => {
     
     for(let i = 0; i < arrowRotation.length; i++){
     arrowRotation[i].classList.toggle('rotate');
@@ -31,13 +32,13 @@ for(let i = 0; i < navSwitcher.length; i++){
   })
 }
 
-hamburger.addEventListener('click', function(){
+hamburger.addEventListener('click', () => {
   topSlideMenu.classList.toggle('active');
   document.body.classList.add('do-not-move')
   exitI.classList.add('show');
 })
 
-exitI.addEventListener('click', function(){
+exitI.addEventListener('click', () => {
   topSlideMenu.classList.remove('active');
   document.body.classList.remove('do-not-move')
   exitI.classList.remove('show');
@@ -46,11 +47,11 @@ exitI.addEventListener('click', function(){
 let topMenuTriggers = [builder, whyThisGallery, services];
 
 for(let i = 0; i < topMenuTriggers.length; i++){
-  topMenuTriggers[i].addEventListener('click', function(){
+  topMenuTriggers[i].addEventListener('click', () => {
   topMenu.classList.toggle('active')
   nav.classList.toggle('black');
 
-  switchColor.forEach(function(color){
+  switchColor.forEach(color =>{
     color.classList.toggle('black')
       })
 })
@@ -62,7 +63,7 @@ window.addEventListener('resize', () => {
     topMenu.classList.remove('active')
     nav.classList.remove('black');
 
-    switchColor.forEach(function(color){
+    switchColor.forEach( color => {
       color.classList.remove('black')
     })
 

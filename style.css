@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #3A4250;
+  background-color: #3a4250;
   font-family: open sans;
   overflow-x: hidden;
 }
@@ -29,7 +29,7 @@ body.do-not-move {
   width: 100vw;
   background-color: white;
   z-index: 1;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .top-slide-menu.active {
@@ -66,7 +66,7 @@ body.do-not-move {
   height: 30px;
   cursor: pointer;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
   color: black;
   z-index: 0;
 }
@@ -83,7 +83,7 @@ body.do-not-move {
   top: 15px;
   left: 15px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   color: black;
   z-index: 0;
   font-size: 40px;
@@ -127,7 +127,7 @@ body.do-not-move {
   height: 200px;
   width: 100%;
   background-color: white;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .top-menu.active {
@@ -164,7 +164,7 @@ section {
 
 /* hover na przyciski w navie */
 .change-color:hover .on-hover {
-  color: #979CA3
+  color: #979ca3;
 }
 
 nav {
@@ -174,7 +174,7 @@ nav {
   margin: 25px auto 0;
   font-weight: 600;
   color: white;
-  border-bottom: 1px solid #4A525F;
+  border-bottom: 1px solid #4a525f;
 }
 
 nav.black {
@@ -205,7 +205,7 @@ nav.black {
   text-decoration: none;
   color: white;
   font-size: 15px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .rotate-me {
@@ -221,7 +221,7 @@ a.black {
 }
 
 a:hover {
-  color: #979CA3;
+  color: #979ca3;
 }
 
 .top-menu-active {
@@ -246,7 +246,7 @@ a:hover {
   font-size: 16px;
   text-transform: uppercase;
   border-radius: 25px;
-  background-color: #4A525F;
+  background-color: #4a525f;
   color: white;
   border: 1px solid #bac3cf80;
   outline-style: none;
@@ -281,20 +281,20 @@ a:hover {
   width: 225px;
   height: 60px;
   margin-top: 20px;
-  border: 1px solid #4786FF;
+  border: 1px solid #4786ff;
   background-color: #4786ff;
   border-radius: 60px;
   outline-style: none;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
-  transition: .3s;
+  transition: 0.3s;
   color: white;
   cursor: pointer;
 }
 
 .wrap-info-buy-me:hover {
-  background-color: #3077FF;
+  background-color: #3077ff;
 }
 
 .watch-video {
@@ -314,7 +314,7 @@ a:hover {
   color: white;
   cursor: pointer;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .watch-video i {
@@ -323,7 +323,7 @@ a:hover {
 
 .watch-video:hover {
   background-color: white;
-  color: #3A4250;
+  color: #3a4250;
 }
 
 .gallery {
@@ -342,9 +342,13 @@ img {
   padding: 5px;
 }
 
+.hide {
+  display: none;
+}
+
 .filter {
   filter: blur(1.5px);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .filter:hover {
@@ -355,7 +359,7 @@ img {
 footer {
   margin: 50px 50px 0;
   padding: 5px 0 5px;
-  border-top: 1px solid #4A525F;
+  border-top: 1px solid #4a525f;
   color: white;
   text-align: center;
   font-size: 11px;
@@ -363,21 +367,18 @@ footer {
 }
 
 @media (orientation: landscape) and (max-height: 640px) {
-
   .top-slide-menu li a {
     font-size: 30px;
   }
 }
 
 @media (orientation: landscape) and (max-height: 480px) {
-
   .top-slide-menu li a {
     font-size: 26px;
   }
 }
 
 @media (orientation: landscape) and (max-height: 360px) {
-
   .top-slide-menu ul {
     height: 250px;
   }
@@ -388,6 +389,10 @@ footer {
 }
 
 @media (max-width: 1550px) {
+  .toggle {
+    display: none;
+  }
+
   .gallery {
     max-width: 990px;
   }
@@ -395,11 +400,9 @@ footer {
   .active-bar {
     width: 1200px;
   }
-
 }
 
 @media (max-width: 1280px) {
-
   nav {
     border-bottom: none;
   }
@@ -462,10 +465,12 @@ footer {
   .filter:hover {
     transform: scale(1);
   }
-
 }
 
 @media (max-width: 1024px) {
+  .toggle {
+    display: block;
+  }
 
   .top-slide-menu li a {
     font-size: 34px;
@@ -511,7 +516,6 @@ footer {
 }
 
 @media (max-width: 760px) {
-
   .top-slide-menu li a {
     font-size: 30px;
   }
@@ -546,7 +550,6 @@ footer {
 }
 
 @media (max-width: 640px) {
-
   .wrap-info {
     margin-top: 175px;
   }
@@ -573,7 +576,6 @@ footer {
 }
 
 @media (max-width: 560px) {
-
   .top-slide-menu ul {
     height: 300px;
   }
@@ -615,7 +617,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-
   .top-slide-menu li a {
     font-size: 26px;
   }
@@ -664,7 +665,6 @@ footer {
 }
 
 @media (max-width: 420px) {
-
   .top-slide-menu li a {
     font-size: 24px;
   }
@@ -687,7 +687,6 @@ footer {
 }
 
 @media (max-width: 380px) {
-
   .top-slide-menu li a {
     font-size: 22px;
   }
@@ -706,7 +705,6 @@ footer {
 }
 
 @media (max-width: 360px) {
-
   img {
     width: 260px;
   }
@@ -725,7 +723,6 @@ footer {
 }
 
 @media (max-width: 320px) {
-
   .top-slide-menu li a {
     font-size: 18px;
   }
