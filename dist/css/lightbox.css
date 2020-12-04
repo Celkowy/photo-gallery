@@ -61,7 +61,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-outerContainer:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -93,7 +93,7 @@ body.lb-disable-scrolling {
   z-index: 10;
 }
 
-.lb-container>.nav {
+.lb-container > .nav {
   left: 0;
 }
 
@@ -153,7 +153,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-dataContainer:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -212,7 +212,6 @@ body.lb-disable-scrolling {
 }
 
 @media (max-width: 1280px) {
-
   .lb-nav a.lb-prev {
     opacity: 1;
   }
@@ -224,5 +223,4 @@ body.lb-disable-scrolling {
   .lb-data .lb-close {
     opacity: 1;
   }
-
 }

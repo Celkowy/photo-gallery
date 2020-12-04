@@ -1,3 +1,3 @@
 # photo-gallery
-Photo gallery made with Lightbox JavaScript library.
 
+Photo gallery made with Lightbox JavaScript library.
