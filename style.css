@@ -68,7 +68,7 @@ body.do-not-move {
   overflow: hidden;
   transition: 0.5s;
   color: black;
-  z-index: 0;
+  z-index: 1;
 }
 
 .hamburger.show {
